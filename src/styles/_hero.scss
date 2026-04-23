@@ -1,0 +1,49 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;     // Necessário para posicionar o pseudo-elemento corretamente
+
+    &::before {
+        position: absolute;     // Posição absoluta para cobrir toda a área do herói
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: "";            // Garante que o pseudo-elemento seja renderizado
+        opacity: 0.65;          // Ajuste da opacidade para criar o efeito
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;            // Aumento do tamanho da fonte
+        line-height: 56px;              // Ajuste do espaçamento entre linhas
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &__logo {
+        margin: 0 auto;               // Centraliza a imagem horizontalmente
+        height: 80px;           // Ajuste da altura da imagem
+        display: block;             // Garante que a imagem seja tratada como um bloco para centralização
+    }
+
+
+    @media (max-width: 640px) {
+        padding: 40px 0;              // Reduz o padding para telas menores
+
+        &__text {
+            font-size: 22px;            // Reduz o tamanho da fonte para telas menores
+            line-height: 24px;              // Ajuste do espaçamento entre linhas para telas menores
+            margin: 24px 0;              // Reduz o margin para telas menores
+        }
+
+        &__logo {
+            height: 40px;           // Reduz a altura da imagem para telas menores
+        }
+    }
+}
