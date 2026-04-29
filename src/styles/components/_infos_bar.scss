@@ -1,0 +1,44 @@
+@use '../variables';
+
+.infos-bar {
+    padding: 16px 24px 16px 24px;
+    background-color: variables.$textColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__infos {
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: variables.$secundaryTextColor;
+            
+            b {
+                font-size: 18px;
+                display: block;     // Garante que o texto em negrito seja exibido em uma nova linha
+                color: variables.$secundaryTextColor;
+            }
+        }
+    }
+
+    @media (max-width: 645px) {
+        display: block;
+
+        &__infos {
+            display: block;
+            gap: 5px;
+
+            &__item {
+                margin-bottom: 24px;  // Adiciona espaçamento entre os itens
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__infos {
+            gap: 10px;
+        }
+    }
+}

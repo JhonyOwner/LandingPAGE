@@ -8,17 +8,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img src="./images/ebac_logo.svg" alt="Logo da EBAC" class="hero__logo">
             <p class="hero__text">
-                <i>"O maior evento de tecnologia do Brasil começa em 10d 12h 30m 45s"</i>
+                <i>O maior evento de tecnologia do Brasil começa em</i> <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Allians Parque, Bairro João - Sp</b>
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>A partir de R$120,00</b>
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>12/12/2026 às 19hrs</b>
+                    </li>
+                </ul>
+                <a href="#" class="button button__primary">Garanta sua vaga</a>
+            </div>
         </div>
     </header>
+    <section class="event event__frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details ">
+                <h2 class="event__details__title">Front-End</h2>
+                    <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio rem, vitae pariatur repellat officiis laboriosam sed maiores autem! Accusantium repudiandae velit necessitatibus suscipit unde atque veritatis ullam assumenda cumque maxime. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur expedita ad sunt tempora eum inventore excepturi nesciunt deserunt unde, facere repudiandae esse, voluptas voluptatum nisi, atque delectus cupiditate sit consequatur.</p>
+                </div>
+            <img  class="event__image" src="./images/frontend.png" alt="Front-end"">
+        </div>
+    </section>
+    <section class="event event__ui-ux event__image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details ">
+                <h2 class="event__details__title">UI/UX</h2>
+                    <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio rem, vitae pariatur repellat officiis laboriosam sed maiores autem! Accusantium repudiandae velit necessitatibus suscipit unde atque veritatis ullam assumenda cumque maxime. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur expedita ad sunt tempora eum inventore excepturi nesciunt deserunt unde, facere repudiandae esse, voluptas voluptatum nisi, atque delectus cupiditate sit consequatur.</p>
+                </div>
+            <img  class="event__image" src="./images/ui-ux.png" alt="UI/UX">
+        </div>
+    </section>
+    <section class="event event__data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details ">
+                <h2 class="event__details__title">Data Science</h2>
+                    <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio rem, vitae pariatur repellat officiis laboriosam sed maiores autem! Accusantium repudiandae velit necessitatibus suscipit unde atque veritatis ullam assumenda cumque maxime. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur expedita ad sunt tempora eum inventore excepturi nesciunt deserunt unde, facere repudiandae esse, voluptas voluptatum nisi, atque delectus cupiditate sit consequatur.</p>
+                </div>
+            <img  class="event__image" src="./images/data.png" alt="Data Science">
+        </div>
+    </section>
+    <section class="event event__backend event__image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details ">
+                <h2 class="event__details__title">Back-End</h2>
+                    <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio rem, vitae pariatur repellat officiis laboriosam sed maiores autem! Accusantium repudiandae velit necessitatibus suscipit unde atque veritatis ullam assumenda cumque maxime. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur expedita ad sunt tempora eum inventore excepturi nesciunt deserunt unde, facere repudiandae esse, voluptas voluptatum nisi, atque delectus cupiditate sit consequatur.</p>
+                </div>
+            <img  class="event__image" src="./images/backend.png" alt="Back-end">
+        </div>
+    </section>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+@use '../variables';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    
+    &__primary {
+        color: #fff;
+        background-color: variables.$purple;
+    }
+    
+    @media (max-width: 645px) {
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}
